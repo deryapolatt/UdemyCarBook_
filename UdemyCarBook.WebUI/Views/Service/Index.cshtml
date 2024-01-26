@@ -1,0 +1,9 @@
+﻿@model List<UdemyCarBook.Dto.ServiceDtos.ResultServiceDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+
+@await Component.InvokeAsync("_BecomeADriverComponentPartial")
+@await Component.InvokeAsync("_ServiceComponentPartial")
